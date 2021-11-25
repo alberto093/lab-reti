@@ -99,6 +99,7 @@ int main(int argc, char *argv[]) {
         }
 
         printf("Connection established with %s:%i", inet_ntoa(cad.sin_addr), cad.sin_port);
+        fflush(stdout);
         client_open = 1;
 
         while (client_open == 1) {
